@@ -7413,23 +7413,44 @@ blockquote {
   padding-top: 40px;
 }
 
-.logo-image-wrapper {
+/* .logo-image-wrapper {
 margin:0.5em;
 padding:3em;
   border-radius: 10px;
-  /* min-width:15%;
-  max-width: 15%;
-  min-height: 2em;
-  max-height: 2em; */
+  height: 600px;
+  max-height:150px;
+  width: 250px;
+  max-width:30px;
   border:2px groove #32257e;
   padding-right: 97px;
   box-shadow:0px 0px 10px 1px #32257e70; 
-}
+} */
 
 /* .logo-image-wrapper img{
   width:100%;
   height: 100%;
 } */
+
+
+.logo-image-wrapper {
+  margin: 0.5em;
+  padding: 10px; /* Remove padding for better image fitting */
+  border-radius: 10px;
+  height: 150px; /* Fixed height */
+  width: 250px; /* Fixed width */
+  border: 2px groove #32257e;
+  box-shadow: 0px 0px 10px 1px #32257e70;
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  overflow: hidden; /* Hide overflow */
+}
+
+.logo-image-wrapper img {
+  height: 100%; /* Make image fill the height */
+  width: 100%; /* Make image fill the width */
+  object-fit: contain; /* Preserve aspect ratio */
+}
 
 .pricing-one-hero {
   background-image: url("https://cdn.prod.website-files.com/6667e2deb8ad5b3f826293d0/6698d386bb4a613f1549cf74_Star%20(5).svg"), linear-gradient(95deg, #020817, #fff0 18%), linear-gradient(270deg, #020817, #fff0 21%), linear-gradient(#0000 63%, #020817), linear-gradient(#020817, #fff0 18%), url("https://cdn.prod.website-files.com/6667e2deb8ad5b3f826293d0/6698d386bb4a613f1549cf95_grid%20background%203%201%20(1).webp");
