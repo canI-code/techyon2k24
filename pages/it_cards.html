@@ -571,6 +571,24 @@
           // Redirect to WhatsApp with the provided phone number
           window.open('https://wa.me/' + phoneNumber, '_blank');
           }
+
+
+          function redirectTo(url) {
+            // Open the URL in a new tab
+            window.open(url, '_blank');
+
+          }
+
+
+          function downloadPDF(filePath) {
+            // Trigger download
+            const a = document.createElement('a');
+            a.href = filePath; // Path to the PDF file
+            a.download = ''; // Empty string will use the file's original name
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a); // Clean up after download
+          }
         </script>
 
 
@@ -586,11 +604,11 @@
                   href="#"
                   class="blog-three-main-item w-inline-block">
                   <div class="blog-three-item-image" onclick="openLightbox('lightbox1')"><img class="auto-fit responsive-image-full-width"
-                          src="../images/dept/it/thumbnails/pcce-bgmi-techyon.webp"
+                          src="../images/dept/it/thumbnail/pcce-bgmi-techyon.webp"
                           width="390" height="232" alt=""
                           sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                           data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                          srcset="../images/dept/it/thumbnails/pcce-bgmi-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-bgmi-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-bgmi-techyon.webp 846w" />
+                          srcset="../images/dept/it/thumbnail/pcce-bgmi-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-bgmi-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-bgmi-techyon.webp 846w" />
                   </div>
 
                   <div class="blog-three-main-item-text">
@@ -601,11 +619,15 @@
 
                           <div id="outer">
           
-                              <div class="button_slide slide_left">
-                                  REGISTER</div> <br>
-                              <div class="button_slide slide_left">RULE BOOK</div>
+                            <div class="button_slide slide_left" 
+                              style="cursor: pointer;" 
+                              onclick="redirectTo('https://google.com')">REGISTER</div> <br>
+                       
+                            <div class="button_slide slide_left" 
+                              style="cursor: pointer;" 
+                              onclick="downloadPDF('../images/dept/it/rulebook/FIFA.pdf')">RULE BOOK</div>
                              
-                            </div>
+                          </div>
 
                       </div>
                       <div class="blog-three-item-line"></div>
@@ -639,11 +661,11 @@
                   href="#"
                   class="blog-three-main-item w-inline-block">
                   <div class="blog-three-item-image" onclick="openLightbox('lightbox2')"><img class="auto-fit responsive-image-full-width"
-                          src="../images/dept/it/thumbnails/pcce-survival-of-the-web-techyon.webp"
+                          src="../images/dept/it/thumbnail/pcce-survival-of-the-web-techyon.webp"
                           width="390" height="232" alt=""
                           sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                           data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                          srcset="../images/dept/it/thumbnails/pcce-survival-of-the-web-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-survival-of-the-web-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-survival-of-the-web-techyon.webp 846w" />
+                          srcset="../images/dept/it/thumbnail/pcce-survival-of-the-web-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-survival-of-the-web-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-survival-of-the-web-techyon.webp 846w" />
                   </div>
 
                   <div class="blog-three-main-item-text">
@@ -691,11 +713,11 @@
                 href="#"
                 class="blog-three-main-item w-inline-block">
                 <div class="blog-three-item-image" onclick="openLightbox('lightbox3')"><img class="auto-fit responsive-image-full-width"
-                        src="../images/dept/it/thumbnails/pcce-blind-fallout-techyon.webp"
+                        src="../images/dept/it/thumbnail/pcce-blind-fallout-techyon.webp"
                         width="390" height="232" alt=""
                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                         data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                        srcset="../images/dept/it/thumbnails/pcce-blind-fallout-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-blind-fallout-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-blind-fallout-techyon.webp 846w" />
+                        srcset="../images/dept/it/thumbnail/pcce-blind-fallout-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-blind-fallout-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-blind-fallout-techyon.webp 846w" />
                 </div>
 
                 <div class="blog-three-main-item-text">
@@ -742,11 +764,11 @@
               href="#"
               class="blog-three-main-item w-inline-block">
               <div class="blog-three-item-image" onclick="openLightbox('lightbox4')"><img class="auto-fit responsive-image-full-width"
-                      src="../images/dept/it/thumbnails/pcce-tech-attack-techyon.webp"
+                      src="../images/dept/it/thumbnail/pcce-tech-attack-techyon.webp"
                       width="390" height="232" alt=""
                       sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                       data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                      srcset="../images/dept/it/thumbnails/pcce-tech-attack-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-tech-attack-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-tech-attack-techyon.webp 846w" />
+                      srcset="../images/dept/it/thumbnail/pcce-tech-attack-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-tech-attack-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-tech-attack-techyon.webp 846w" />
               </div>
 
               <div class="blog-three-main-item-text">
@@ -793,11 +815,11 @@
               href="#"
               class="blog-three-main-item w-inline-block">
               <div class="blog-three-item-image" onclick="openLightbox('lightbox5')"><img class="auto-fit responsive-image-full-width"
-                      src="../images/dept/it/thumbnails/pcce-webdev-using-wordpress-techyon.webp"
+                      src="../images/dept/it/thumbnail/pcce-webdev-using-wordpress-techyon.webp"
                       width="390" height="232" alt=""
                       sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                       data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                      srcset="../images/dept/it/thumbnails/pcce-webdev-using-wordpress-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-webdev-using-wordpress-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-webdev-using-wordpress-techyon.webp 846w" />
+                      srcset="../images/dept/it/thumbnail/pcce-webdev-using-wordpress-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-webdev-using-wordpress-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-webdev-using-wordpress-techyon.webp 846w" />
               </div>
 
               <div class="blog-three-main-item-text">
@@ -879,11 +901,11 @@
                   href="#"
                   class="blog-three-main-item w-inline-block">
                   <div class="blog-three-item-image" onclick="openLightbox('lightbox21')"><img class="auto-fit responsive-image-full-width"
-                          src="../images/dept/it/thumbnails/pcce-cod-mobile-techyon.webp"
+                          src="../images/dept/it/thumbnail/pcce-cod-mobile-techyon.webp"
                           width="390" height="232" alt=""
                           sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                           data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                          srcset="../images/dept/it/thumbnails/pcce-cod-mobile-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-cod-mobile-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-cod-mobile-techyon.webp 846w" />
+                          srcset="../images/dept/it/thumbnail/pcce-cod-mobile-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-cod-mobile-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-cod-mobile-techyon.webp 846w" />
                   </div>
 
                   <div class="blog-three-main-item-text">
@@ -932,11 +954,11 @@
                   href="#"
                   class="blog-three-main-item w-inline-block">
                   <div class="blog-three-item-image" onclick="openLightbox('lightbox22')"><img class="auto-fit responsive-image-full-width"
-                          src="../images/dept/it/thumbnails/pcce-interface-of-the-end-techyon.webp"
+                          src="../images/dept/it/thumbnail/pcce-interface-of-the-end-techyon.webp"
                           width="390" height="232" alt=""
                           sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                           data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                          srcset="../images/dept/it/thumbnails/pcce-interface-of-the-end-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-interface-of-the-end-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-interface-of-the-end-techyon.webp 846w" />
+                          srcset="../images/dept/it/thumbnail/pcce-interface-of-the-end-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-interface-of-the-end-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-interface-of-the-end-techyon.webp 846w" />
                   </div>
 
                   <div class="blog-three-main-item-text">
@@ -984,11 +1006,11 @@
                 href="#"
                 class="blog-three-main-item w-inline-block">
                 <div class="blog-three-item-image" onclick="openLightbox('lightbox23')"><img class="auto-fit responsive-image-full-width"
-                        src="../images/dept/it/thumbnails/pcce-doomsday-trivia-techyon.webp"
+                        src="../images/dept/it/thumbnail/pcce-doomsday-trivia-techyon.webp"
                         width="390" height="232" alt=""
                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                         data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                        srcset="../images/dept/it/thumbnails/pcce-doomsday-trivia-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-doomsday-trivia-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-doomsday-trivia-techyon.webp 846w" />
+                        srcset="../images/dept/it/thumbnail/pcce-doomsday-trivia-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-doomsday-trivia-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-doomsday-trivia-techyon.webp 846w" />
                 </div>
 
                 <div class="blog-three-main-item-text">
@@ -1035,11 +1057,11 @@
               href="#"
               class="blog-three-main-item w-inline-block">
               <div class="blog-three-item-image" onclick="openLightbox('lightbox24')"><img class="auto-fit responsive-image-full-width"
-                      src="../images/dept/it/thumbnails/pcce-apocalypse-anamolies-techyon.webp"
+                      src="../images/dept/it/thumbnail/pcce-apocalypse-anamolies-techyon.webp"
                       width="390" height="232" alt=""
                       sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                       data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                      srcset="../images/dept/it/thumbnails/pcce-apocalypse-anamolies-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-apocalypse-anamolies-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-apocalypse-anamolies-techyon.webp 846w" />
+                      srcset="../images/dept/it/thumbnail/pcce-apocalypse-anamolies-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-apocalypse-anamolies-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-apocalypse-anamolies-techyon.webp 846w" />
               </div>
 
               <div class="blog-three-main-item-text">
@@ -1116,11 +1138,11 @@
                   href="#"
                   class="blog-three-main-item w-inline-block">
                   <div class="blog-three-item-image" onclick="openLightbox('lightbox31')"><img class="auto-fit responsive-image-full-width"
-                          src="../images/dept/it/thumbnails/pcce-fifa-techyon.webp"
+                          src="../images/dept/it/thumbnail/pcce-fifa-techyon.webp"
                           width="390" height="232" alt=""
                           sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                           data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                          srcset="../images/dept/it/thumbnails/pcce-fifa-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-fifa-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-fifa-techyon.webp 846w" />
+                          srcset="../images/dept/it/thumbnail/pcce-fifa-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-fifa-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-fifa-techyon.webp 846w" />
                   </div>
 
                   <div class="blog-three-main-item-text">
@@ -1169,11 +1191,11 @@
                   href="#"
                   class="blog-three-main-item w-inline-block">
                   <div class="blog-three-item-image" onclick="openLightbox('lightbox32')"><img class="auto-fit responsive-image-full-width"
-                          src="../images/dept/it/thumbnails/pcce-pitch-or-perish-techyon.webp"
+                          src="../images/dept/it/thumbnail/pcce-pitch-or-perish-techyon.webp"
                           width="390" height="232" alt=""
                           sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                           data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                          srcset="../images/dept/it/thumbnails/pcce-pitch-or-perish-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-pitch-or-perish-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-pitch-or-perish-techyon.webp 846w" />
+                          srcset="../images/dept/it/thumbnail/pcce-pitch-or-perish-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-pitch-or-perish-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-pitch-or-perish-techyon.webp 846w" />
                   </div>
 
                   <div class="blog-three-main-item-text">
@@ -1221,11 +1243,11 @@
                 href="#"
                 class="blog-three-main-item w-inline-block">
                 <div class="blog-three-item-image" onclick="openLightbox('lightbox33')"><img class="auto-fit responsive-image-full-width"
-                        src="../images/dept/it/thumbnails/pcce-d-cipher-chase-techyon.webp"
+                        src="../images/dept/it/thumbnail/pcce-d-cipher-chase-techyon.webp"
                         width="390" height="232" alt=""
                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                         data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                        srcset="../images/dept/it/thumbnails/pcce-d-cipher-chase-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-d-cipher-chase-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-d-cipher-chase-techyon.webp 846w" />
+                        srcset="../images/dept/it/thumbnail/pcce-d-cipher-chase-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-d-cipher-chase-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-d-cipher-chase-techyon.webp 846w" />
                 </div>
 
                 <div class="blog-three-main-item-text">
@@ -1272,11 +1294,11 @@
               href="#"
               class="blog-three-main-item w-inline-block">
               <div class="blog-three-item-image" onclick="openLightbox('lightbox34')"><img class="auto-fit responsive-image-full-width"
-                      src="../images/dept/it/thumbnails/pcce-html-css-techyon.webp"
+                      src="../images/dept/it/thumbnail/pcce-html-css-techyon.webp"
                       width="390" height="232" alt=""
                       sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 47vw, (max-width: 1279px) 30vw, 388px"
                       data-w-id="496713a6-7eba-ba5a-12a8-93a396116d75" loading="lazy"
-                      srcset="../images/dept/it/thumbnails/pcce-html-css-techyon.webp 500w, ../images/dept/it/thumbnails/pcce-html-css-techyon.webp 800w, ../images/dept/it/thumbnails/pcce-html-css-techyon.webp 846w" />
+                      srcset="../images/dept/it/thumbnail/pcce-html-css-techyon.webp 500w, ../images/dept/it/thumbnail/pcce-html-css-techyon.webp 800w, ../images/dept/it/thumbnail/pcce-html-css-techyon.webp 846w" />
               </div>
 
               <div class="blog-three-main-item-text">
