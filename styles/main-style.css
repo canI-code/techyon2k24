@@ -4106,8 +4106,8 @@ blockquote {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 220px;
-  padding-bottom: 350px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .home-two-main-image-wrapper {
@@ -7339,6 +7339,23 @@ blockquote {
   display: grid;
 }
 
+.team-one-team-block2 {
+  grid-column-gap: 10px; /* Reduced gap between columns */
+  grid-row-gap: 10px; /* Reduced gap between rows */
+  grid-template-columns: repeat(2, 1fr); /* Two columns, each taking up equal width */
+  display: grid;
+  justify-content: center; /* Centers the grid on the page */
+  justify-items: center; /* Centers the cards within each grid cell */
+}
+
+.team-one-team-block2 .w-dyn-items {
+  width: calc(60% - 20px); /* Each card will be 1/3 of the total width minus half the reduced gap */
+}
+
+.w-dyn-item{
+  margin-bottom:5%;
+}
+
 .team-one-main {
   margin-top: -440px;
   padding-bottom: 120px;
@@ -9817,7 +9834,7 @@ padding:3em;
   }
 
   .home-one-marquee {
-    padding-top: 60px;
+    padding-top: 100px;
   }
 
   .home-one-marquee.chnage-padding-top {
@@ -10150,6 +10167,7 @@ padding:3em;
 
   .home-two-video, .background-video {
     height: auto;
+    min-height: 50vh;
   }
 
   .home-two-vedio-wrapper {
@@ -10499,9 +10517,9 @@ padding:3em;
     padding-bottom: 30px;
   }
 
-  .social-icon-inside {
+  /* .social-icon-inside {
     display: none;
-  }
+  } */
 
   .about-two-hero-banner-image {
     margin-top: 0;
@@ -11000,7 +11018,8 @@ padding:3em;
     display: none;
   }
 
-  .team-one-team-block {
+  .team-one-team-block,
+  .team-one-team-block2 {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -11668,7 +11687,7 @@ padding:3em;
   }
 
   .featuree-three-post-item {
-    border:1px solid yellow;
+    /* border:1px solid yellow; */
     border-bottom: 1px solid #fff3;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -11724,9 +11743,11 @@ padding:3em;
     padding-top: 100px;
   }
 
-  .team-one-team-block {
+  .team-one-team-block,
+  .team-one-team-block2{
     grid-template-columns: 1fr;
   }
+  
 
   .team-details-hero, .pricing-one-hero, .pricing-one-hero.position-relative.chnage-index {
     padding-top: 100px;
@@ -12207,6 +12228,11 @@ padding:3em;
     justify-content: center;
     align-items: center;
   }
+
+  .header-two-logo{
+    width:75vw;
+  }
+
 }
 
 #w-node-e5e9b9a6-60de-ce8f-78e8-1f4a01d51ddb-cc1494b6, #w-node-e5e9b9a6-60de-ce8f-78e8-1f4a01d51dde-cc1494b6 {
