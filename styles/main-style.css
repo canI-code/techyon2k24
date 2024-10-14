@@ -3564,16 +3564,19 @@ blockquote {
 }
 
 .home-one-cta-wrapper {
-  background-image: url("https://cdn.prod.website-files.com/6667e2deb8ad5b3f826293d0/6694e61c7e4af33294d78443_Cta.webp");
+   background-image: url("https://cdn.prod.website-files.com/6667e2deb8ad5b3f826293d0/6694e61c7e4af33294d78443_Cta.webp");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid #fff3;
   border-radius: 20px;
   max-width: 1400px;
+/*   margin:2%;
+  width:100%; */
   margin-left: auto;
   margin-right: auto;
   padding: 130px 15px 140px;
+  /* padding:2%; */
 }
 
 .home-one-cta-button-wrapper {
@@ -9978,9 +9981,9 @@ padding:3em;
     bottom: 0;
   }
 
-  .home-one-cta-heading {
+/*   .home-one-cta-heading {
     display: none;
-  }
+  } */
 
   .home-one-cta-wrapper {
     padding-top: 60px;
