@@ -376,21 +376,22 @@ display: block;
 
     <style>
       .button_slide {
-      color: #FFF;
-      border: 2px solid rgb(216, 2, 134);
-      border-radius: 30px;
-      padding: 10px 36px;
-      display: inline-block;
-      font-family: "Lucida Console", Monaco, monospace;
-      font-size: 12.2px;
-      cursor: pointer;
-      box-shadow: inset 0 0 0 0 #D80286;
-      -webkit-transition: ease-out 0.4s;
-      -moz-transition: ease-out 0.4s;
-      transition: ease-out 0.4s;
-      margin: 2px;
-      text-align: center;
-      
+          color: #FFF;
+          border: 2px solid rgb(216, 2, 134);
+          border-radius: 30px;
+          padding: 10px;
+          display: inline-block;
+          font-family: "Lucida Console", Monaco, monospace;
+          font-size: 12.2px;
+          cursor: pointer;
+          box-shadow: inset 0 0 0 0 #D80286;
+          -webkit-transition: ease-out 0.4s;
+          -moz-transition: ease-out 0.4s;
+          transition: ease-out 0.4s;
+          margin: 2px;
+          text-align: center;
+          flex-basis: 45%; /* Each button takes 45% of the available width */
+          box-sizing: border-box;
       }
 
        /* *, *:before, *:after {
@@ -536,14 +537,34 @@ display: block;
       }
 
       #outer {
-      width: auto;
-      margin: auto  ;
-      text-align: center;
-      display: flex;
-      flex-direction: row;
-      
-      padding:20px;
+          width: 100%;
+          margin: auto;
+          text-align: center;
+          display: flex;
+          flex-direction: row;
+          justify-content: center; /* Center the buttons */
+          align-items: center;
+          gap: 10px;
+          padding: 20px;
+          flex-wrap: nowrap; /* Prevents wrapping */
+          box-sizing: border-box;
       }
+
+
+      @media (max-width: 480px) {
+          #outer {
+              padding: 10px;
+          }
+
+          .button_slide {
+              font-size: 10px;
+              padding: 8px;
+              margin: 5px;
+              flex-basis: 45%; /* Ensures each button is 45% of the screen width */
+          }
+      }
+
+      
     </style>
 
     
