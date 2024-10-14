@@ -3568,7 +3568,7 @@ blockquote {
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-/*   border: 1px solid #fff3; */
+  border: 1px solid #fff3;
   border-radius: 20px;
   max-width: 1400px;
   margin:2%;
