@@ -7458,8 +7458,9 @@ padding:3em;
   border-radius: 10px;
   height: 150px; /* Fixed height */
   width: 250px; /* Fixed width */
-  border: 2px groove #32257e;
-  box-shadow: 0px 0px 10px 1px #32257e70;
+  background-color: #ffffff0d;
+  border: 1px solid #ffffff1a;
+  border-radius: 15px;
   display: flex; /* Enable flexbox */
   justify-content: center; /* Center image horizontally */
   align-items: center; /* Center image vertically */
